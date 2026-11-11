@@ -45,7 +45,7 @@ jobs:
       - run: npm audit --audit-level=moderate
       - run: python scripts/ui_smoke.py
       - run: docker build -t upi-guard:test .
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: test-results
@@ -61,7 +61,7 @@ jobs:
       - run: pip install bandit==1.9.4 pip-audit==2.10.1
       - run: bandit -r upi_guard -ll -f json -o bandit.json
       - run: pip-audit -r requirements.lock --no-deps --disable-pip -f json -o dependency-audit.json
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: security-results
