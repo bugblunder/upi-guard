@@ -37,7 +37,7 @@ jobs:
       - run: python -m research.verify_results research/results
       - run: python -m experiments.poisoning --verify
       - run: python scripts/release_check.py
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
           cache: npm
