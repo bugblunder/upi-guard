@@ -1,0 +1,7 @@
+{
+  "name": "upi-guard-ui-validation",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Optional DOM integration checks; the application itself has no Node build requirement",
+  "devDependencies": {"jsdom": "26.1.0"}
+}

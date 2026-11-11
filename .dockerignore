@@ -1,0 +1,12 @@
+.env
+.venv
+node_modules
+instance
+__pycache__
+.pytest_cache
+pytest-of-*
+dist
+build
+*.egg-info
+.git
+*.db

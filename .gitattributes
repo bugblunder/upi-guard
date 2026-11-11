@@ -1,0 +1,6 @@
+* text=auto eol=lf
+# Preserve dataset/result bytes for published checksums on Windows too.
+*.csv -text whitespace=cr-at-eol
+*.png binary
+*.joblib binary
+*.pdf binary

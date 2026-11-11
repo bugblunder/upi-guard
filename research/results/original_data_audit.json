@@ -1,0 +1,12 @@
+{
+  "source": "data/synthetic_training.csv",
+  "source_sha256": "42a807498ee6e6c86d9511d1a6a3dffb5ad3e2bb14074604dd712ec17fd49ce9",
+  "n": 12000,
+  "prevalence": 0.09283333333333334,
+  "new_payee_auc": 0.8917341826555018,
+  "zero_rate": {
+    "receiver_fanin_24h": 0.7891666666666667,
+    "payer_incoming_count_1h": 1.0,
+    "pass_through_ratio_1h": 1.0
+  }
+}

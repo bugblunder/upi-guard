@@ -1,0 +1,162 @@
+[
+  {
+    "seed": 0,
+    "arm": "drift",
+    "n": 17280,
+    "data_sha256": "e8913569047729b5d60702f0cb940aaf318248c96a5a42e2e7c0e29d0eae20ab",
+    "prevalence": 0.031828703703703706,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.346875,
+      "payer_incoming_count_1h": 0.11822916666666666,
+      "pass_through_ratio_1h": 0.11822916666666666
+    },
+    "novelty_auc": {
+      "new_payee": 0.6639509862522415,
+      "new_device": 0.6917203716785306
+    }
+  },
+  {
+    "seed": 0,
+    "arm": "control",
+    "n": 17280,
+    "data_sha256": "08c33f33632aec0772cf378c307f0c65cb6e625f131b3c8823fb74978221bb4d",
+    "prevalence": 0.031828703703703706,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.3414351851851852,
+      "payer_incoming_count_1h": 0.11568287037037037,
+      "pass_through_ratio_1h": 0.11568287037037037
+    },
+    "novelty_auc": {
+      "new_payee": 0.6949198500244527,
+      "new_device": 0.7903928707275988
+    }
+  },
+  {
+    "seed": 1,
+    "arm": "drift",
+    "n": 17280,
+    "data_sha256": "0176e5c12ccec1a5379dbeaa5a812b728a0f5a00456c31b3bd567304e08cf3ab",
+    "prevalence": 0.041666666666666664,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.33466435185185184,
+      "payer_incoming_count_1h": 0.11649305555555556,
+      "pass_through_ratio_1h": 0.11649305555555556
+    },
+    "novelty_auc": {
+      "new_payee": 0.6407910628019324,
+      "new_device": 0.6717391304347826
+    }
+  },
+  {
+    "seed": 1,
+    "arm": "control",
+    "n": 17280,
+    "data_sha256": "ab9b4846cbeab94e526177005a75d0de5be959b965e75418382a6dc042612e33",
+    "prevalence": 0.041666666666666664,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.32430555555555557,
+      "payer_incoming_count_1h": 0.11197916666666667,
+      "pass_through_ratio_1h": 0.11197916666666667
+    },
+    "novelty_auc": {
+      "new_payee": 0.6771437198067634,
+      "new_device": 0.791364734299517
+    }
+  },
+  {
+    "seed": 2,
+    "arm": "drift",
+    "n": 17280,
+    "data_sha256": "4ce111b20b1a02af05b341c53c812310eba2269c61b3760aed6aaf98e8b94d9a",
+    "prevalence": 0.03501157407407408,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.3377893518518518,
+      "payer_incoming_count_1h": 0.11568287037037037,
+      "pass_through_ratio_1h": 0.11568287037037037
+    },
+    "novelty_auc": {
+      "new_payee": 0.651284275217763,
+      "new_device": 0.6838227167408032
+    }
+  },
+  {
+    "seed": 2,
+    "arm": "control",
+    "n": 17280,
+    "data_sha256": "6be56160886fd1f557f12e71a56cbd72fde2ca70f46a5a0327781401114fc84f",
+    "prevalence": 0.03501157407407408,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.3315972222222222,
+      "payer_incoming_count_1h": 0.11284722222222222,
+      "pass_through_ratio_1h": 0.11284722222222222
+    },
+    "novelty_auc": {
+      "new_payee": 0.6818328026069609,
+      "new_device": 0.7892780056252866
+    }
+  },
+  {
+    "seed": 3,
+    "arm": "drift",
+    "n": 17280,
+    "data_sha256": "f0330919b204a7b24124f367977770bfc316475969789f723025d3574d55a37b",
+    "prevalence": 0.03501157407407408,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.3357060185185185,
+      "payer_incoming_count_1h": 0.11493055555555555,
+      "pass_through_ratio_1h": 0.11493055555555555
+    },
+    "novelty_auc": {
+      "new_payee": 0.6569363252258168,
+      "new_device": 0.7004584484617196
+    }
+  },
+  {
+    "seed": 3,
+    "arm": "control",
+    "n": 17280,
+    "data_sha256": "348c3573361f9e48b063eb94d4ae2bbc20b843398508ae39ab084c04b3c66b3f",
+    "prevalence": 0.03501157407407408,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.3304398148148148,
+      "payer_incoming_count_1h": 0.11232638888888889,
+      "pass_through_ratio_1h": 0.11232638888888889
+    },
+    "novelty_auc": {
+      "new_payee": 0.6801367911085779,
+      "new_device": 0.801631580903763
+    }
+  },
+  {
+    "seed": 4,
+    "arm": "drift",
+    "n": 17280,
+    "data_sha256": "1dd5a80db80e7e19c36ee88d272dc1d1d80fb30a1bc3f360fe7ed81741dd68ec",
+    "prevalence": 0.0359375,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.3458912037037037,
+      "payer_incoming_count_1h": 0.11747685185185185,
+      "pass_through_ratio_1h": 0.11747685185185185
+    },
+    "novelty_auc": {
+      "new_payee": 0.6460537064440948,
+      "new_device": 0.7115255626283743
+    }
+  },
+  {
+    "seed": 4,
+    "arm": "control",
+    "n": 17280,
+    "data_sha256": "9e3acc47191d74d7ade736eb380027a5540c19aeedcb2a6f6c290f4702b287cb",
+    "prevalence": 0.0359375,
+    "graph_nonzero": {
+      "receiver_fanin_24h": 0.3392361111111111,
+      "payer_incoming_count_1h": 0.11440972222222222,
+      "pass_through_ratio_1h": 0.11440972222222222
+    },
+    "novelty_auc": {
+      "new_payee": 0.6808853811883901,
+      "new_device": 0.815060145058031
+    }
+  }
+]

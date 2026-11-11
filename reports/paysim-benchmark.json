@@ -1,0 +1,216 @@
+{
+  "source": "https://www.kaggle.com/datasets/ealaxi/paysim1",
+  "dataset_version": 2,
+  "paper": "Lopez-Rojas, Elmir and Axelsson (2016), PaySim: A financial mobile money simulator for fraud detection",
+  "archive_sha256": "f7eef9ffad5cfa64a034143a5c9b30491d189420b273d5ad5723ca40b596613d",
+  "full_rows": 6362620,
+  "full_fraud_count": 8213,
+  "sampling": "Every tenth row, starting with row zero, irrespective of label; no class resampling",
+  "sample_rows": 636262,
+  "sample_fraud_count": 817,
+  "features": [
+    "log_amount",
+    "log_oldbalance",
+    "type"
+  ],
+  "excluded": "All post-transaction balances, isFlaggedFraud, identifiers and the step feature",
+  "splits": {
+    "train": {
+      "n": 382060,
+      "fraud": 324,
+      "first_step": 1,
+      "last_step": 281
+    },
+    "calibration": {
+      "n": 64299,
+      "fraud": 41,
+      "first_step": 282,
+      "last_step": 323
+    },
+    "validation": {
+      "n": 65030,
+      "fraud": 30,
+      "first_step": 324,
+      "last_step": 355
+    },
+    "test": {
+      "n": 124873,
+      "fraud": 422,
+      "first_step": 356,
+      "last_step": 742
+    }
+  },
+  "models": {
+    "logistic_regression": {
+      "validation": {
+        "n": 65030,
+        "fraud_count": 30,
+        "fraud_rate": 0.0004613255420575119,
+        "accuracy": 0.979978471474704,
+        "precision": 0.010769230769230769,
+        "recall": 0.4666666666666667,
+        "f1": 0.021052631578947368,
+        "false_positive_rate": 0.019784615384615383,
+        "average_precision": 0.009118176959079963,
+        "roc_auc": 0.9760107692307693,
+        "brier_score": 0.00046633350687261764,
+        "confusion_matrix": [
+          [
+            63714,
+            1286
+          ],
+          [
+            16,
+            14
+          ]
+        ],
+        "alert_rate": 0.01999077348915885,
+        "threshold": 0.006955513088074734
+      },
+      "test": {
+        "n": 124873,
+        "fraud_count": 422,
+        "fraud_rate": 0.0033794335044405118,
+        "accuracy": 0.9773209580934229,
+        "precision": 0.06840974212034384,
+        "recall": 0.45260663507109006,
+        "f1": 0.11885500933416304,
+        "false_positive_rate": 0.02089979188596315,
+        "average_precision": 0.056387112809151686,
+        "roc_auc": 0.9731277210265781,
+        "brier_score": 0.0033461018978768087,
+        "confusion_matrix": [
+          [
+            121850,
+            2601
+          ],
+          [
+            231,
+            191
+          ]
+        ],
+        "alert_rate": 0.022358716455919213,
+        "threshold": 0.006955513088074734
+      },
+      "prevalence_scenarios": [
+        {
+          "prevalence": 0.1,
+          "precision": 0.7064199642072768,
+          "alert_rate": 0.06407047620447584,
+          "alerts_per_100000": 6407.047620447584,
+          "false_alerts_per_100000": 1880.9812697366835
+        },
+        {
+          "prevalence": 0.01,
+          "precision": 0.17948572081011477,
+          "alert_rate": 0.025216860317814418,
+          "alerts_per_100000": 2521.6860317814417,
+          "false_alerts_per_100000": 2069.079396710352
+        },
+        {
+          "prevalence": 0.001,
+          "precision": 0.02121776068423307,
+          "alert_rate": 0.021331498729148277,
+          "alerts_per_100000": 2133.149872914828,
+          "false_alerts_per_100000": 2087.8892094077187
+        },
+        {
+          "prevalence": 0.0001,
+          "precision": 0.0021611394928115124,
+          "alert_rate": 0.020942962570281665,
+          "alerts_per_100000": 2094.2962570281666,
+          "false_alerts_per_100000": 2089.7701906774555
+        }
+      ]
+    },
+    "hist_gradient_boosting": {
+      "validation": {
+        "n": 65030,
+        "fraud_count": 30,
+        "fraud_rate": 0.0004613255420575119,
+        "accuracy": 0.9804705520528987,
+        "precision": 0.023076923076923078,
+        "recall": 1.0,
+        "f1": 0.045112781954887216,
+        "false_positive_rate": 0.01953846153846154,
+        "average_precision": 0.5370312109452025,
+        "roc_auc": 0.9990489743589743,
+        "brier_score": 0.00032830828415182856,
+        "confusion_matrix": [
+          [
+            63730,
+            1270
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        "alert_rate": 0.01999077348915885,
+        "threshold": 0.001834429987026318
+      },
+      "test": {
+        "n": 124873,
+        "fraud_count": 422,
+        "fraud_rate": 0.0033794335044405118,
+        "accuracy": 0.97888254466538,
+        "precision": 0.1355709114840408,
+        "recall": 0.976303317535545,
+        "f1": 0.23808147934123086,
+        "false_positive_rate": 0.021108709451912802,
+        "average_precision": 0.8148310871093533,
+        "roc_auc": 0.9972615652114704,
+        "brier_score": 0.001793827693798513,
+        "confusion_matrix": [
+          [
+            121824,
+            2627
+          ],
+          [
+            10,
+            412
+          ]
+        ],
+        "alert_rate": 0.02433672611373155,
+        "threshold": 0.001834429987026318
+      },
+      "prevalence_scenarios": [
+        {
+          "prevalence": 0.1,
+          "precision": 0.837107634765044,
+          "alert_rate": 0.11662817026027603,
+          "alerts_per_100000": 11662.817026027602,
+          "false_alerts_per_100000": 1899.783850672152
+        },
+        {
+          "prevalence": 0.01,
+          "precision": 0.31842219305870356,
+          "alert_rate": 0.030660655532749125,
+          "alerts_per_100000": 3066.0655532749124,
+          "false_alerts_per_100000": 2089.7622357393675
+        },
+        {
+          "prevalence": 0.001,
+          "precision": 0.044248892439015745,
+          "alert_rate": 0.022063904059996434,
+          "alerts_per_100000": 2206.3904059996435,
+          "false_alerts_per_100000": 2108.760074246089
+        },
+        {
+          "prevalence": 0.0001,
+          "precision": 0.0046042858787938585,
+          "alert_rate": 0.021204228912721165,
+          "alerts_per_100000": 2120.4228912721164,
+          "false_alerts_per_100000": 2110.659858096761
+        }
+      ]
+    }
+  },
+  "primary_model": "logistic_regression (predeclared baseline; no selection using test)",
+  "limitations": [
+    "Independent synthetic generator, not real UPI traffic.",
+    "Native-schema benchmark is not validation of the deployed UPI model.",
+    "Systematic subsampling can alias row ordering; results apply to this documented sample.",
+    "No real-world cost, capacity, intervention effect or calibration claim."
+  ]
+}

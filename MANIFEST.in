@@ -1,0 +1,10 @@
+include requirements.txt requirements.lock requirements-dev.txt alembic.ini
+include Dockerfile compose.yaml wsgi.py package.json package-lock.json
+recursive-include migrations *.py *.mako
+recursive-include data *.csv
+recursive-include artifacts *.json *.joblib *.png *.csv
+recursive-include docs *.md
+recursive-include tests *.py
+recursive-include research *.py *.md *.txt *.csv *.json *.png
+recursive-include experiments *.py *.md *.csv *.json *.png
+recursive-include scripts *.py *.cjs
