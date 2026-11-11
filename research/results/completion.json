@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "models": [
+    "hgb",
+    "lr"
+  ],
+  "arms": [
+    "drift",
+    "control"
+  ],
+  "weekly_rows": 1680,
+  "monitor_rows": 240,
+  "events_per_seed_arm": 17280,
+  "total_simulated_events": 172800,
+  "source_hashes_verified": true
+}

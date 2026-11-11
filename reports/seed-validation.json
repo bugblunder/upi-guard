@@ -1,0 +1,96 @@
+{
+  "model_version": "v21-9fd597289003-logistic_regression",
+  "seeds": [
+    {
+      "seed": 101,
+      "model_metrics": {
+        "n": 2400,
+        "fraud_count": 226,
+        "fraud_rate": 0.09416666666666666,
+        "accuracy": 0.9125,
+        "precision": 0.7666666666666667,
+        "recall": 0.10176991150442478,
+        "f1": 0.1796875,
+        "false_positive_rate": 0.003219871205151794,
+        "average_precision": 0.666457798772291,
+        "roc_auc": 0.9491984922373015,
+        "brier_score": 0.04479585081370407,
+        "confusion_matrix": [
+          [
+            2167,
+            7
+          ],
+          [
+            203,
+            23
+          ]
+        ],
+        "alert_rate": 0.0125,
+        "threshold": 0.8557545784808326
+      },
+      "policy_alert_rate": 0.0125,
+      "policy_recall": 0.10176991150442478
+    },
+    {
+      "seed": 202,
+      "model_metrics": {
+        "n": 2400,
+        "fraud_count": 195,
+        "fraud_rate": 0.08125,
+        "accuracy": 0.9233333333333333,
+        "precision": 0.627906976744186,
+        "recall": 0.13846153846153847,
+        "f1": 0.226890756302521,
+        "false_positive_rate": 0.0072562358276643995,
+        "average_precision": 0.6015591785944148,
+        "roc_auc": 0.9551090179661609,
+        "brier_score": 0.040437423529216435,
+        "confusion_matrix": [
+          [
+            2189,
+            16
+          ],
+          [
+            168,
+            27
+          ]
+        ],
+        "alert_rate": 0.017916666666666668,
+        "threshold": 0.8557545784808326
+      },
+      "policy_alert_rate": 0.017916666666666668,
+      "policy_recall": 0.13846153846153847
+    },
+    {
+      "seed": 303,
+      "model_metrics": {
+        "n": 2400,
+        "fraud_count": 213,
+        "fraud_rate": 0.08875,
+        "accuracy": 0.9183333333333333,
+        "precision": 0.7297297297297297,
+        "recall": 0.1267605633802817,
+        "f1": 0.216,
+        "false_positive_rate": 0.004572473708276178,
+        "average_precision": 0.6484501795945325,
+        "roc_auc": 0.9416676863497705,
+        "brier_score": 0.043147487072266476,
+        "confusion_matrix": [
+          [
+            2177,
+            10
+          ],
+          [
+            186,
+            27
+          ]
+        ],
+        "alert_rate": 0.015416666666666667,
+        "threshold": 0.8557545784808326
+      },
+      "policy_alert_rate": 0.015416666666666667,
+      "policy_recall": 0.1267605633802817
+    }
+  ],
+  "scope": "Frozen model on three new draws of the same generator. No independent real-world or unseen-scenario validation."
+}

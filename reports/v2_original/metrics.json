@@ -1,0 +1,328 @@
+{
+  "version": "v2-c94ddf8c32f6-hist_gradient_boosting",
+  "selected_model": "hist_gradient_boosting",
+  "seed": 42,
+  "data_kind": "synthetic only",
+  "feature_version": "2.0.0",
+  "dataset_sha256": "2ce1ddc61b1ce2d40840b080e5b5e47b9a1a81aa803b342c0eda39970aae6d73",
+  "created_at": "2026-10-10T11:49:54.391719+00:00",
+  "python": "3.12.14",
+  "sklearn": "1.8.0",
+  "selection": "Highest validation average precision; test never used for selection",
+  "calibration": "Sigmoid fitted on the separate chronological 60-70% partition",
+  "threshold_objective": {
+    "false_negative_cost": 25,
+    "false_positive_cost": 1,
+    "note": "Illustrative relative costs, not bank-calibrated financial costs"
+  },
+  "splits": {
+    "train": {
+      "n": 7200,
+      "first": "2025-01-01T00:00:00Z",
+      "last": "2025-01-25T23:55:00Z"
+    },
+    "calibration": {
+      "n": 1200,
+      "first": "2025-01-26T00:00:00Z",
+      "last": "2025-01-30T03:55:00Z"
+    },
+    "validation": {
+      "n": 1200,
+      "first": "2025-01-30T04:00:00Z",
+      "last": "2025-02-03T07:55:00Z"
+    },
+    "test": {
+      "n": 2400,
+      "first": "2025-02-03T08:00:00Z",
+      "last": "2025-02-11T15:55:00Z"
+    }
+  },
+  "models": {
+    "logistic_regression": {
+      "validation": {
+        "n": 1200,
+        "fraud_count": 118,
+        "fraud_rate": 0.09833333333333333,
+        "accuracy": 0.9458333333333333,
+        "precision": 0.6480446927374302,
+        "recall": 0.9830508474576272,
+        "f1": 0.7811447811447811,
+        "false_positive_rate": 0.05822550831792976,
+        "average_precision": 0.716080874456197,
+        "roc_auc": 0.9757432876969829,
+        "brier_score": 0.03762664082728199,
+        "confusion_matrix": [
+          [
+            1019,
+            63
+          ],
+          [
+            2,
+            116
+          ]
+        ],
+        "alert_rate": 0.14916666666666667,
+        "threshold": 0.16343395269142336
+      },
+      "test": {
+        "n": 2400,
+        "fraud_count": 237,
+        "fraud_rate": 0.09875,
+        "accuracy": 0.9325,
+        "precision": 0.6099706744868035,
+        "recall": 0.8776371308016878,
+        "f1": 0.7197231833910035,
+        "false_positive_rate": 0.061488673139158574,
+        "average_precision": 0.6524426456796186,
+        "roc_auc": 0.9537093933062963,
+        "brier_score": 0.04958614758436538,
+        "confusion_matrix": [
+          [
+            2030,
+            133
+          ],
+          [
+            29,
+            208
+          ]
+        ],
+        "alert_rate": 0.14208333333333334,
+        "threshold": 0.16343395269142336
+      }
+    },
+    "random_forest": {
+      "validation": {
+        "n": 1200,
+        "fraud_count": 118,
+        "fraud_rate": 0.09833333333333333,
+        "accuracy": 0.9425,
+        "precision": 0.6338797814207651,
+        "recall": 0.9830508474576272,
+        "f1": 0.770764119601329,
+        "false_positive_rate": 0.06192236598890943,
+        "average_precision": 0.7209970616613537,
+        "roc_auc": 0.9760095867665028,
+        "brier_score": 0.03570777349138308,
+        "confusion_matrix": [
+          [
+            1015,
+            67
+          ],
+          [
+            2,
+            116
+          ]
+        ],
+        "alert_rate": 0.1525,
+        "threshold": 0.17619372657786633
+      },
+      "test": {
+        "n": 2400,
+        "fraud_count": 237,
+        "fraud_rate": 0.09875,
+        "accuracy": 0.93,
+        "precision": 0.592,
+        "recall": 0.9367088607594937,
+        "f1": 0.7254901960784313,
+        "false_positive_rate": 0.07073509015256588,
+        "average_precision": 0.6545865017120724,
+        "roc_auc": 0.9521410137116172,
+        "brier_score": 0.04471654809502278,
+        "confusion_matrix": [
+          [
+            2010,
+            153
+          ],
+          [
+            15,
+            222
+          ]
+        ],
+        "alert_rate": 0.15625,
+        "threshold": 0.17619372657786633
+      }
+    },
+    "hist_gradient_boosting": {
+      "validation": {
+        "n": 1200,
+        "fraud_count": 118,
+        "fraud_rate": 0.09833333333333333,
+        "accuracy": 0.9316666666666666,
+        "precision": 0.5918367346938775,
+        "recall": 0.9830508474576272,
+        "f1": 0.7388535031847133,
+        "false_positive_rate": 0.07393715341959335,
+        "average_precision": 0.7214270199464977,
+        "roc_auc": 0.9659685453804944,
+        "brier_score": 0.03892665241642859,
+        "confusion_matrix": [
+          [
+            1002,
+            80
+          ],
+          [
+            2,
+            116
+          ]
+        ],
+        "alert_rate": 0.16333333333333333,
+        "threshold": 0.05871783552380881
+      },
+      "test": {
+        "n": 2400,
+        "fraud_count": 237,
+        "fraud_rate": 0.09875,
+        "accuracy": 0.89875,
+        "precision": 0.49353448275862066,
+        "recall": 0.9662447257383966,
+        "f1": 0.6533523537803139,
+        "false_positive_rate": 0.10864539990753583,
+        "average_precision": 0.6559313064649849,
+        "roc_auc": 0.9522151411053955,
+        "brier_score": 0.04560027650826543,
+        "confusion_matrix": [
+          [
+            1928,
+            235
+          ],
+          [
+            8,
+            229
+          ]
+        ],
+        "alert_rate": 0.19333333333333333,
+        "threshold": 0.05871783552380881
+      }
+    }
+  },
+  "unseen_payers_test": {
+    "n": 374,
+    "fraud_count": 34,
+    "fraud_rate": 0.09090909090909091,
+    "accuracy": 0.7647058823529411,
+    "precision": 0.2711864406779661,
+    "recall": 0.9411764705882353,
+    "f1": 0.42105263157894735,
+    "false_positive_rate": 0.2529411764705882,
+    "average_precision": 0.5284412840663056,
+    "roc_auc": 0.9185121107266435,
+    "brier_score": 0.0561851542288448,
+    "confusion_matrix": [
+      [
+        254,
+        86
+      ],
+      [
+        2,
+        32
+      ]
+    ],
+    "alert_rate": 0.3155080213903743,
+    "threshold": 0.05871783552380881
+  },
+  "test_unseen_payer_count": 30,
+  "permutation_importance": {
+    "log_amount": 0.02024584448613731,
+    "count_5m": -0.002227461216519455,
+    "count_1h": 4.501430454989519e-05,
+    "log_sum_1h": -0.010104648669098493,
+    "amount_ratio": 0.04933852562166119,
+    "new_payee": 0.3911788363745131,
+    "new_device": 0.0359366571804014,
+    "distinct_payees_1h": 0.00048482956649131825,
+    "history_count": -0.0019105310494428873,
+    "account_age_days": 0.00012091046402040728,
+    "failed_attempts_1h": 0.031673084673690566,
+    "hour_sin": -0.0014843408397763325,
+    "hour_cos": -0.003868107381414798,
+    "category": 0.008211029960529637,
+    "channel": 0.006949371369709856
+  },
+  "reference_features": {
+    "log_amount": {
+      "mean": 6.219878369716497,
+      "std": 1.1375969726595536,
+      "min": 3.104586678466073,
+      "max": 11.292957864979245
+    },
+    "count_5m": {
+      "mean": 0.1988888888888889,
+      "std": 0.8301506105945292,
+      "min": 0.0,
+      "max": 6.0
+    },
+    "count_1h": {
+      "mean": 0.27,
+      "std": 0.8776460200236755,
+      "min": 0.0,
+      "max": 7.0
+    },
+    "log_sum_1h": {
+      "mean": 0.9431003560108547,
+      "std": 2.4639290127696416,
+      "min": 0.0,
+      "max": 11.464510130543351
+    },
+    "amount_ratio": {
+      "mean": 1.9173583365233708,
+      "std": 3.4335236348736493,
+      "min": 0.021238702480700734,
+      "max": 71.6668412781561
+    },
+    "new_payee": {
+      "mean": 0.2644444444444444,
+      "std": 0.4410675682643874,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "new_device": {
+      "mean": 0.06319444444444444,
+      "std": 0.24332926278213593,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "distinct_payees_1h": {
+      "mean": 0.2663888888888889,
+      "std": 0.8644051669760964,
+      "min": 0.0,
+      "max": 7.0
+    },
+    "history_count": {
+      "mean": 24.191944444444445,
+      "std": 15.031072750979991,
+      "min": 0.0,
+      "max": 73.0
+    },
+    "account_age_days": {
+      "mean": 1289.8891666666666,
+      "std": 757.3451337114844,
+      "min": 15.0,
+      "max": 2519.0
+    },
+    "failed_attempts_1h": {
+      "mean": 0.17152777777777778,
+      "std": 0.8512970415373186,
+      "min": 0.0,
+      "max": 8.0
+    },
+    "hour_sin": {
+      "mean": -0.00015590886175921722,
+      "std": 0.7072036727175678,
+      "min": -1.0,
+      "max": 1.0
+    },
+    "hour_cos": {
+      "mean": 0.00027120487830122205,
+      "std": 0.7071080367265121,
+      "min": -1.0,
+      "max": 1.0
+    }
+  },
+  "model_sha256": "cceb507e0ec2d64e6d3a1e018d1762b55eb74e3a563868aa2488ba0e50ddf7a9",
+  "limitations": [
+    "Synthetic labels are not evidence of real UPI fraud detection.",
+    "Scenario families overlap across time; unseen-payer test is not an unseen-fraud-family test.",
+    "Sequential history uses earlier observed transactions, never their labels.",
+    "Calibration and cost thresholds apply only to this simulation distribution."
+  ]
+}

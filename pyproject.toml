@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "upi-guard"
+version = "2.2.0"
+description = "Reproducible fraud-risk research and ML security sandbox"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dynamic = ["dependencies"]
+
+[project.scripts]
+upi-guard = "upi_guard.__main__:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["upi_guard*", "research", "experiments"]
+
+[tool.setuptools.package-data]
+upi_guard = ["static/*.css", "static/*.js", "templates/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["postgres: requires an isolated TEST_DATABASE_URL PostgreSQL database"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+# Correctness checks for legacy and new code; a full style migration is separate.
+select = ["E9", "F63", "F7", "F82"]

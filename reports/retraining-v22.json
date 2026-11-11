@@ -1,0 +1,9 @@
+{
+  "original_version": "v21-9fd597289003-logistic_regression",
+  "retrained_version": "v21-c52b51e21a98-logistic_regression",
+  "selected_model_unchanged": true,
+  "selected_test_metrics_exactly_equal": true,
+  "policy_test_exactly_equal": true,
+  "feature_sha256_equal": true,
+  "note": "Full source-data training rerun in an isolated Python 3.12 environment. Metadata normalization can change artifact identity; model test metrics are compared separately."
+}

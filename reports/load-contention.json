@@ -1,0 +1,25 @@
+{
+  "requests": 2000,
+  "workers": 16,
+  "seeded_transactions": 500,
+  "elapsed_seconds": 40.333,
+  "throughput_rps": 49.59,
+  "p50_ms": 57.54,
+  "p95_ms": 1773.35,
+  "p99_ms": 3696.3,
+  "max_ms": 6392.58,
+  "status_counts": {
+    "200": 200,
+    "422": 100,
+    "201": 1700
+  },
+  "unexpected_responses": 0,
+  "workload": {
+    "duplicate": 200,
+    "invalid": 100,
+    "late": 200,
+    "new": 1500
+  },
+  "configuration": "One threaded Werkzeug process, SQLite WAL, 50 recurring payers, 20 shared recipients; in-memory limiter enabled at 20000/min for this experiment only.",
+  "scope": "Includes HTTP, auth, limiter, growing payer/receiver histories, anomaly scoring, commits and contention. No PostgreSQL/Redis/multiworker/network-capacity claim."
+}

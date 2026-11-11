@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "simulator": {
+    "weeks": 24,
+    "episodes_per_week": 240,
+    "fraud_episode_rate": 0.04,
+    "drift_week": 14,
+    "adaptation_week": 18,
+    "adaptation_strength": 0.8,
+    "label_flip_rate": 0.005,
+    "seed": 0
+  },
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "models": [
+    "hgb",
+    "lr"
+  ],
+  "arms": [
+    "control",
+    "drift"
+  ],
+  "budget": 0.05,
+  "regimes": [
+    "clean",
+    "targeted_0.1",
+    "random_0.1",
+    "targeted_0.3",
+    "random_0.3",
+    "targeted_0.5",
+    "random_0.5"
+  ],
+  "positive_label_fractions": [
+    0.1,
+    0.3,
+    0.5
+  ],
+  "train_weeks": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "evaluation_weeks": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "label_delay_weeks": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "sklearn": "1.8.0",
+  "source_sha256": {
+    "experiments/poisoning.py": "32788b8554f4bf1332ea2fc7da7e42ead2648a78772f088c0d40e4227675dc1f",
+    "research/study.py": "8c19166d5accc3165d2530d183e79bfef04b72840b3b13ba5adce7d24b595ab8",
+    "research/shared.py": "bc5c27f5c194de93d29cea59352c22bbcb59ff466b966602e6794b068db17e47",
+    "research/typology_sim.py": "cbb296c096ac77717cc596e2fbc4ae7d0a69e07696cc79639628b4cc325f75f3",
+    "upi_guard/features.py": "21eb1402c11aab16f5d5bc8b92c4c2f92efb88007c5200ff425d43a9144f5be8",
+    "upi_guard/monitoring.py": "accd44b407f4d69b93a1e7aa5440328303f2d735932535d05bdf62f8e7da8811"
+  },
+  "uncertainty": "Descriptive 95% t intervals across paired seed means; exploratory, no multiplicity correction.",
+  "threat": "Initial training-label corruption only; immutable features and latent test truth. No adversarial input optimization."
+}

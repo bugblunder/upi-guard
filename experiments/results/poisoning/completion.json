@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "weekly_rows": 1680,
+  "corruption_rows": 70,
+  "unique_simulated_events": 172800,
+  "model_fits": 140,
+  "output_sha256": {
+    "protocol.json": "f23930a45f77315500bd2966a7ce4e95fe36a5a157746559665afb88cd20312c",
+    "weekly.csv": "ace7b580f3fa5f028651a670d5763494b8039f965cc046c346b5ab1823e77dde",
+    "corruption.csv": "b0bad9c595e56a0f7ad238f8ae76664b788ccb778f7500bb5eb6d9faa73753a3",
+    "summary.csv": "6624ee3f540878f8e19c61f02bf85f48427b57325452ef721a7792c31a4c2beb",
+    "paired.csv": "9ee2c0070c0feee7678ceed9e1b27306243b8f2759fc7f7adcc6192a9a6288b9"
+  }
+}

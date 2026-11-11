@@ -1,0 +1,60 @@
+{
+  "simulator": {
+    "weeks": 24,
+    "episodes_per_week": 240,
+    "fraud_episode_rate": 0.04,
+    "drift_week": 14,
+    "adaptation_week": 18,
+    "adaptation_strength": 0.8,
+    "label_flip_rate": 0.005,
+    "seed": 0
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "models": [
+    "hgb",
+    "lr"
+  ],
+  "arms": [
+    "drift",
+    "control"
+  ],
+  "budget": 0.05,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "command": [
+    "/workspace/scratch/ebe2d45f5c2a/UPI_Guard_V2/research/study.py",
+    "--seeds",
+    "5",
+    "--episodes",
+    "240",
+    "--models",
+    "hgb",
+    "lr",
+    "--out",
+    "research/results"
+  ],
+  "source_sha256": {
+    "research/__init__.py": "09e4f127fbb8f6fd36dc084b9611bd6b549990d9c484210bda4d278d541286a3",
+    "research/shared.py": "bc5c27f5c194de93d29cea59352c22bbcb59ff466b966602e6794b068db17e47",
+    "research/study.py": "8c19166d5accc3165d2530d183e79bfef04b72840b3b13ba5adce7d24b595ab8",
+    "research/typology_sim.py": "cbb296c096ac77717cc596e2fbc4ae7d0a69e07696cc79639628b4cc325f75f3",
+    "upi_guard/features.py": "21eb1402c11aab16f5d5bc8b92c4c2f92efb88007c5200ff425d43a9144f5be8",
+    "upi_guard/monitoring.py": "accd44b407f4d69b93a1e7aa5440328303f2d735932535d05bdf62f8e7da8811"
+  },
+  "partitions": {
+    "warmup": "weeks 0-4",
+    "initial_train": "weeks 5-8",
+    "monitor_reference": "weeks 9-11",
+    "evaluation": "weeks 12-23"
+  },
+  "uncertainty": "95% t intervals over per-seed means or paired differences; not real-world uncertainty."
+}

@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "Authenticated cookie and rotated CSRF token",
+    "Overview renders 300 persisted transactions",
+    "Transaction ID search updates the table",
+    "Manual case creation and additive SHAP model evidence",
+    "Case assignment, notes and confirmed resolution",
+    "Measured model comparison and numeric/categorical diagnostics render",
+    "Single scoring form receives and renders API assessment",
+    "Duplicate form submission shows existing assessment"
+  ],
+  "errors": [],
+  "scope": "jsdom 26 DOM interactions against a live local HTTP API; canvas and dialog primitives stubbed. Not browser rendering, CSP execution or responsive-layout verification."
+}

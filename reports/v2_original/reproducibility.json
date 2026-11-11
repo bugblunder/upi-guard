@@ -1,0 +1,7 @@
+{
+  "same_version": true,
+  "same_dataset_hash": true,
+  "same_model_bytes": false,
+  "identical_model_metrics": true,
+  "environment": "Fresh Python 3.12 virtual environment installed from requirements-dev.txt; OMP_NUM_THREADS=1 and OPENBLAS_NUM_THREADS=1"
+}
